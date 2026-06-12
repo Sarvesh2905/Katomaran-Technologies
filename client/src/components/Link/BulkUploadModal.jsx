@@ -60,7 +60,7 @@ export const BulkUploadModal = ({ isOpen, onClose }) => {
     const blob = new Blob([csv], { type: 'text/csv' })
     const a = document.createElement('a')
     a.href = URL.createObjectURL(blob)
-    a.download = 'katomaran-bulk-template.csv'
+    a.download = 'katopulse-bulk-template.csv'
     a.click()
   }
 

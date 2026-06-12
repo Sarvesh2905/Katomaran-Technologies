@@ -239,12 +239,12 @@ export const exportAnalyticsCSV = async (req, res, next) => {
       ].map(escape).join(','))
     ].join('\n');
 
-    const footer = `\n# Generated: ${format(new Date(), 'yyyy-MM-dd HH:mm:ss')}\n# Katomaran Link Analytics`;
+    const footer = `\n# Generated: ${format(new Date(), 'yyyy-MM-dd HH:mm:ss')}\n# KatoPulse Link Analytics`;
 
     const csvContent = summarySection + clickSection + footer;
 
     res.setHeader('Content-Type', 'text/csv');
-    res.setHeader('Content-Disposition', `attachment; filename="katomaran-${link.shortCode}-${format(new Date(), 'yyyy-MM-dd')}.csv"`);
+    res.setHeader('Content-Disposition', `attachment; filename="katopulse-${link.shortCode}-${format(new Date(), 'yyyy-MM-dd')}.csv"`);
     res.send(csvContent);
   } catch (error) {
     next(error);

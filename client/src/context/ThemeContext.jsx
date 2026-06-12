@@ -4,7 +4,7 @@ export const ThemeContext = createContext()
 
 export const ThemeProvider = ({ children }) => {
   const getInitialTheme = () => {
-    const stored = localStorage.getItem('katomaran-theme')
+    const stored = localStorage.getItem('katopulse-theme')
     if (stored) return stored
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
   }
@@ -21,7 +21,7 @@ export const ThemeProvider = ({ children }) => {
     setTheme(prev => {
       const next = prev === 'dark' ? 'light' : 'dark'
       document.documentElement.setAttribute('data-theme', next)
-      localStorage.setItem('katomaran-theme', next)
+      localStorage.setItem('katopulse-theme', next)
       return next
     })
   }

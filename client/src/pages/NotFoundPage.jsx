@@ -31,7 +31,7 @@ export default function NotFoundPage() {
         <div className="glass-card rounded-2xl p-8 mb-6" style={{ border: '1px solid var(--border-default)' }}>
           <div className="flex items-center gap-2 justify-center mb-4">
             <Link2 className="h-5 w-5 text-violet-400" />
-            <span className="font-bold gradient-text">Katomaran</span>
+            <span className="font-bold gradient-text">KatoPulse</span>
           </div>
           <h1 className="text-xl font-bold mb-2" style={{ color: 'var(--text-primary)' }}>
             Lost in Deep Space

@@ -74,7 +74,7 @@ export default function LoginPage() {
                 <Link2 className="h-7 w-7 text-white" />
               </div>
             </div>
-            <span className="text-2xl font-bold gradient-text">Katomaran</span>
+            <span className="text-2xl font-bold gradient-text">KatoPulse</span>
           </motion.div>
           <h1 className="text-2xl font-bold mb-1" style={{ color: 'var(--text-primary)' }}>
             Welcome back

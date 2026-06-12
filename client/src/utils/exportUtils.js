@@ -19,7 +19,7 @@ export const exportToPDF = (link, analytics) => {
   doc.setTextColor(167, 139, 250)
   doc.setFontSize(22)
   doc.setFont('helvetica', 'bold')
-  doc.text('Katomaran Link Analytics', 12, 18)
+  doc.text('KatoPulse Link Analytics', 12, 18)
 
   doc.setTextColor(148, 163, 184)
   doc.setFontSize(9)
@@ -151,13 +151,13 @@ export const exportToPDF = (link, analytics) => {
     doc.setFontSize(7.5)
     doc.setTextColor(100, 116, 139)
     doc.text(
-      `Katomaran Link Analytics  |  Page ${i} of ${totalPages}  |  Generated ${format(new Date(), 'MMM dd, yyyy HH:mm')}`,
+      `KatoPulse Link Analytics  |  Page ${i} of ${totalPages}  |  Generated ${format(new Date(), 'MMM dd, yyyy HH:mm')}`,
       14,
       doc.internal.pageSize.getHeight() - 4
     )
   }
 
-  const filename = `katomaran-${link.shortCode}-${format(new Date(), 'yyyy-MM-dd')}.pdf`
+  const filename = `katopulse-${link.shortCode}-${format(new Date(), 'yyyy-MM-dd')}.pdf`
   const blob = doc.output('blob')
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')
@@ -212,7 +212,7 @@ export const exportToCSV = (link, analytics) => {
     ...(analytics.dailyClicks || []).map(d => row([d.date, d.clicks])),
     '',
     `# Generated: ${format(new Date(), 'yyyy-MM-dd HH:mm:ss')}`,
-    '# Katomaran Link Analytics — https://katomaran.app'
+    '# KatoPulse Link Analytics — https://katopulse.app'
   ]
 
   const csvContent = sections.join('\n')
@@ -220,7 +220,7 @@ export const exportToCSV = (link, analytics) => {
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')
   a.href = url
-  a.download = `katomaran-${link.shortCode}-${format(new Date(), 'yyyy-MM-dd')}.csv`
+  a.download = `katopulse-${link.shortCode}-${format(new Date(), 'yyyy-MM-dd')}.csv`
   document.body.appendChild(a)
   a.click()
   document.body.removeChild(a)

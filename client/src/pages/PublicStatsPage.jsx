@@ -61,7 +61,7 @@ export default function PublicStatsPage() {
             <div className="p-2.5 rounded-xl" style={{ background: 'linear-gradient(135deg, #7c3aed, #06b6d4)' }}>
               <Link2 className="h-5 w-5 text-white" />
             </div>
-            <span className="text-xl font-bold gradient-text">Katomaran Stats</span>
+            <span className="text-xl font-bold gradient-text">KatoPulse Stats</span>
           </div>
 
           <div className="glass-card rounded-2xl p-6" style={{ border: '1px solid var(--border-default)' }}>
@@ -150,7 +150,7 @@ export default function PublicStatsPage() {
         )}
 
         <p className="text-center text-xs" style={{ color: 'var(--text-muted)' }}>
-          Powered by <span className="text-violet-400 font-medium">Katomaran Link Analytics</span>
+          Powered by <span className="text-violet-400 font-medium">KatoPulse Link Analytics</span>
         </p>
       </div>
     </div>

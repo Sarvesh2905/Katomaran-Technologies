@@ -36,7 +36,7 @@ export const Navbar = () => {
                 <Link2 className="h-4 w-4 text-white" />
               </div>
             </div>
-            <span className="text-lg font-bold gradient-text">Katomaran</span>
+            <span className="text-lg font-bold gradient-text">KatoPulse</span>
           </Link>
 
           {/* Desktop nav */}

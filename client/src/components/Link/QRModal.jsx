@@ -16,7 +16,7 @@ export const QRModal = ({ isOpen, onClose, qrCode, shortUrl }) => {
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
-      a.download = `katomaran-qr-${shortUrl?.split('/').pop() || 'code'}.png`
+      a.download = `katopulse-qr-${shortUrl?.split('/').pop() || 'code'}.png`
       document.body.appendChild(a)
       a.click()
       document.body.removeChild(a)

@@ -56,7 +56,7 @@ export default function LinkStatusPage() {
       >
         <div className="inline-flex items-center gap-2 mb-6 opacity-60">
           <Link2 className="h-4 w-4 text-violet-400" />
-          <span className="text-sm font-medium text-violet-400">Katomaran</span>
+          <span className="text-sm font-medium text-violet-400">KatoPulse</span>
         </div>
 
         <div className="relative inline-block mb-6">
