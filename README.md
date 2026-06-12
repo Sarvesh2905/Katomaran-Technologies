@@ -6,48 +6,84 @@
 ![MongoDB](https://img.shields.io/badge/Database-MongoDB-47A248)
 ![Status](https://img.shields.io/badge/Status-Live-success)
 
+A production-ready URL Shortener & Analytics SaaS Platform built for the Katomaran Hackathon.
+
 ---
 
-# 🌐 Live Demo
+# 🌐 Live Links
 
-**Application:**
+### Live Application
+
 https://katomoran.vercel.app/
 
-**GitHub Repository:**
+### Backend API
+
+https://katomaran-api.onrender.com
+
+### GitHub Repository
+
 https://github.com/Sarvesh2905/katomoran-
 
-**Demo Video (Loom/YouTube):**
-[ADD VIDEO LINK HERE]
+### Demo Video
+
+**[ADD LOOM / YOUTUBE VIDEO LINK HERE]**
+
+---
+
+# 📚 Table of Contents
+
+* Overview
+* Problem Statement
+* Features
+* Architecture Diagram
+* AI Planning Document
+* Tech Stack
+* Setup Instructions
+* Environment Variables
+* Screenshots
+* Assumptions
+* Deployment
+* Future Enhancements
+* Developer
 
 ---
 
 # 📌 Project Overview
 
-KatoPulse is a production-ready URL Shortener & Analytics SaaS platform built as part of the Katomaran Hackathon.
+KatoPulse is a modern SaaS platform that enables users to create short URLs, manage links, generate QR codes, monitor engagement, and analyze traffic using advanced analytics.
 
-The platform allows users to create shortened URLs, generate QR codes, track visitor analytics, monitor engagement, and gain insights through an interactive analytics dashboard.
+The platform combines:
 
-Unlike traditional URL shorteners, KatoPulse combines:
-
-* URL Management
-* Analytics
+* URL Shortening
 * QR Generation
-* Referrer Tracking
 * Device Analytics
-* Geographic Insights
-* SaaS Insight Engine
-* Export Systems
-* Interactive Dashboard
+* Browser Analytics
+* Geographic Analytics
+* Referrer Analytics
+* Public Statistics Pages
+* Insight Engine
+* CSV Export
+* PDF Export
+* Health Score Analysis
 
-into a single modern SaaS application.
+into a single unified analytics ecosystem.
+
+Unlike traditional URL shorteners, KatoPulse focuses on both link management and business intelligence.
 
 ---
 
 # 🎯 Problem Statement
 
-Build a full-stack URL Shortener application where users can create short links for long URLs and track analytics such as click count, creation date, and recent visits.
+Build a full-stack URL Shortener application where users can:
 
-The platform should allow authenticated users to manage their links and view performance insights.
+* Create short URLs
+* Manage links securely
+* Track click analytics
+* View engagement insights
+* Export reports
+* Monitor visitor behavior
+
+The platform should support authentication, analytics tracking, and a premium user experience.
 
 ---
 
@@ -55,10 +91,10 @@ The platform should allow authenticated users to manage their links and view per
 
 ## 🔐 Authentication
 
-* User Signup
+* User Registration
 * User Login
 * JWT Authentication
-* Password Hashing (bcrypt)
+* Password Hashing using bcrypt
 * Protected Routes
 * Session Validation
 * Logout Functionality
@@ -73,9 +109,9 @@ The platform should allow authenticated users to manage their links and view per
 * Custom Alias Support
 * URL Validation
 * Duplicate Alias Prevention
-* Server-Side Redirect Handling
+* Server-side Redirect Handling
 
-Examples:
+Example:
 
 ```text
 https://amazon.com/product/123456
@@ -97,7 +133,7 @@ Displays:
 * Created Date
 * Expiry Date
 * Status
-* Total Clicks
+* Click Count
 * Health Score
 
 Actions:
@@ -106,7 +142,7 @@ Actions:
 * Edit URL
 * Delete URL
 * Enable / Disable Link
-* Generate QR
+* Generate QR Code
 * View Analytics
 
 ---
@@ -173,9 +209,9 @@ Examples:
 
 ### Daily Click Trends
 
-* 7 Days
-* 30 Days
-* 90 Days
+* Last 7 Days
+* Last 30 Days
+* Last 90 Days
 
 ### Public Statistics Page
 
@@ -185,11 +221,11 @@ Examples:
 
 ### Edit Destination URL
 
-Update URL without changing shortcode.
+Update destination URL without changing shortcode.
 
-### Bulk URL Creation
+### Bulk URL Upload
 
-CSV Upload Support.
+Upload multiple URLs through CSV.
 
 ---
 
@@ -227,8 +263,8 @@ Calculated using:
 
 * Click Activity
 * Link Age
+* Status
 * Recent Activity
-* Link Status
 
 Ratings:
 
@@ -243,11 +279,11 @@ Ratings:
 
 ### CSV Export
 
-Export analytics data.
+Export analytics reports to CSV.
 
 ### PDF Export
 
-Generate detailed analytics reports.
+Generate professional analytics reports.
 
 Includes:
 
@@ -287,7 +323,7 @@ Search by:
 
 ---
 
-## 🎨 UI/UX Features
+## 🎨 UI / UX Features
 
 ### Theme System
 
@@ -306,7 +342,7 @@ Search by:
 
 ### 3D Cosmic Design System
 
-Inspired By:
+Inspired by:
 
 * Apple Vision Pro
 * Stripe
@@ -321,40 +357,63 @@ Includes:
 * Glassmorphism
 * Animated KPI Counters
 * Interactive Charts
-* Micro Interactions
 * Dynamic Shadows
+* Micro Interactions
 
 ---
 
 # 🏗 Architecture Diagram
 
-## System Architecture
+<p align="center">
+  <img src="./architecture-diagram.png" alt="KatoPulse Architecture Diagram" width="1000"/>
+</p>
 
-[INSERT ERASER.IO ARCHITECTURE DIAGRAM IMAGE HERE]
-
-## Architecture Description
+## Architecture Overview
 
 Frontend (React + Vite)
+
 ↓
+
 REST API Layer
+
 ↓
+
 Express Backend
+
 ↓
+
 MongoDB Atlas
 
 Analytics Flow:
 
 Visitor
+
 ↓
+
 Short URL
+
 ↓
+
 Redirect Controller
+
 ↓
+
 Analytics Capture
+
 ↓
+
 MongoDB
+
 ↓
+
 Dashboard Insights
+
+This architecture ensures:
+
+* Scalability
+* Security
+* Maintainability
+* Production Readiness
 
 ---
 
@@ -378,32 +437,38 @@ The problem statement was analyzed and divided into:
 Chosen Architecture:
 
 Frontend
+
 ↓
+
 REST APIs
+
 ↓
+
 Express Backend
+
 ↓
+
 MongoDB Atlas
 
-Reasoning:
+### Why This Architecture?
 
-* Scalability
-* Maintainability
-* Security
 * Clear Separation of Concerns
+* Easy Maintenance
+* High Scalability
+* Production-Friendly Deployment
 
 ---
 
 ## Phase 3 - Feature Planning
 
-Mandatory Features:
+### Mandatory Features
 
 * Authentication
 * URL Shortening
 * Dashboard
 * Analytics
 
-Bonus Features:
+### Bonus Features
 
 * QR Code Generation
 * Custom Alias
@@ -412,27 +477,28 @@ Bonus Features:
 * Browser Analytics
 * Geo Analytics
 * Daily Trends
-* Public Stats Page
+* Public Statistics
 * Bulk Upload
 
-Advanced Features:
+### Advanced Features
 
 * Insight Engine
 * Health Score
 * Theme System
-* CSV/PDF Export
-* Search/Filter/Sort
+* CSV Export
+* PDF Export
+* Search / Filter / Sort
 
 ---
 
 ## Phase 4 - Development
 
-Features were implemented incrementally with:
+Implemented with:
 
 * Backend Validation
 * Security Checks
 * Error Handling
-* Production Readiness Verification
+* Deployment Readiness Validation
 
 ---
 
@@ -493,9 +559,6 @@ MongoDB Atlas
 
 ```bash
 git clone https://github.com/Sarvesh2905/katomoran-.git
-```
-
-```bash
 cd katomoran-
 ```
 
@@ -526,58 +589,99 @@ npm run dev
 ## Frontend (.env)
 
 ```env
-VITE_API_URL=
-VITE_BASE_URL=
+VITE_API_URL=https://katomaran-api.onrender.com/api
+VITE_BASE_URL=https://katomoran.vercel.app
 ```
 
 ## Backend (.env)
 
 ```env
-MONGODB_URI=
-JWT_SECRET=
-CLIENT_URL=
-BASE_URL=
-PORT=
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/katopulse
+JWT_SECRET=your_super_secret_jwt_key
+CLIENT_URL=https://katomoran.vercel.app
+BASE_URL=https://katomoran.vercel.app
+PORT=5000
+NODE_ENV=production
 ```
 
 ---
 
-# 📸 Sample Outputs
+# 📸 Application Screenshots
 
-## Dashboard
+## Landing Page
 
-[ADD SCREENSHOT]
+![Landing Page](./screenshots/landing-page.png)
 
-## Analytics
+## Login Page
 
-[ADD SCREENSHOT]
+![Login](./screenshots/login-page.png)
 
-## QR Generation
+## Dashboard Overview
 
-[ADD SCREENSHOT]
+![Dashboard](./screenshots/dashboard-overview.png)
 
-## MongoDB Collections
+## URL Creation
 
-[ADD SCREENSHOT]
+![URL Creation](./screenshots/create-url.png)
 
-## PDF Export
+## Analytics Dashboard
 
-[ADD SCREENSHOT]
+![Analytics Dashboard](./screenshots/analytics-dashboard.png)
+
+## Device Analytics
+
+![Device Analytics](./screenshots/device-analytics.png)
+
+## Browser Analytics
+
+![Browser Analytics](./screenshots/browser-analytics.png)
+
+## Geographic Analytics
+
+![Geographic Analytics](./screenshots/geographic-analytics.png)
+
+## Referrer Analytics
+
+![Referrer Analytics](./screenshots/referrer-analytics.png)
+
+## QR Code Generation
+
+![QR Generator](./screenshots/qr-generator.png)
+
+## Public Stats Page
+
+![Public Stats](./screenshots/public-stats.png)
+
+## Bulk Upload
+
+![Bulk Upload](./screenshots/bulk-upload.png)
+
+## Theme System
+
+![Theme System](./screenshots/theme-system.png)
 
 ## CSV Export
 
-[ADD SCREENSHOT]
+![CSV Export](./screenshots/csv-export.png)
+
+## PDF Export
+
+![PDF Export](./screenshots/pdf-export.png)
+
+## MongoDB Collections
+
+![MongoDB](./screenshots/mongodb-collections.png)
 
 ---
 
 # 🧪 Assumptions Made
 
-* Users manage only their own links.
-* Each custom alias must be unique.
+* Users can manage only their own URLs.
+* Custom aliases must remain unique.
 * Analytics are recorded on every successful redirect.
-* Expired links should not redirect.
-* Disabled links should not redirect.
-* Public statistics pages expose only analytics information.
+* Expired links do not redirect.
+* Disabled links do not redirect.
+* Public statistics pages expose analytics information only.
 * MongoDB Atlas remains available during runtime.
 
 ---
@@ -588,7 +692,7 @@ Frontend:
 https://katomoran.vercel.app/
 
 Backend:
-[ADD RENDER URL]
+https://katomaran-api.onrender.com
 
 Database:
 MongoDB Atlas
@@ -599,7 +703,7 @@ MongoDB Atlas
 
 Loom / YouTube Video:
 
-[ADD VIDEO LINK HERE]
+**[ADD VIDEO LINK HERE]**
 
 ---
 
@@ -608,23 +712,28 @@ Loom / YouTube Video:
 * Team Workspaces
 * Custom Domains
 * Scheduled Link Expiry
-* Advanced AI Insights
+* AI-Based Insights
 * Email Reports
 * Webhook Integrations
-* Role Based Access Control
+* Role-Based Access Control
 
 ---
 
 # 👨‍💻 Developer
 
-Sarvesh P
+**Sarvesh P**
+
+Organization:
+**Katomaran Technologies**
 
 GitHub:
 https://github.com/Sarvesh2905
 
 LinkedIn:
-[ADD LINKEDIN PROFILE]
+https://www.linkedin.com/in/sarveshp2905/
 
 ---
+
+## 📜 Hackathon Attribution
 
 This project is a part of a hackathon run by https://katomaran.com
