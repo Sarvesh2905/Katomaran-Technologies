@@ -26,7 +26,7 @@ https://github.com/Sarvesh2905/Katomaran-Technologies
 
 ### Demo Video
 
-**[ADD LOOM / YOUTUBE VIDEO LINK HERE]**
+https://youtu.be/znUkjVRNUJY?si=3ZV8O8RhltZC0P16
 
 ---
 
@@ -699,7 +699,7 @@ MongoDB Atlas
 
 Loom / YouTube Video:
 
-**[ADD VIDEO LINK HERE]**
+https://youtu.be/znUkjVRNUJY?si=3ZV8O8RhltZC0P16
 
 ---
 
