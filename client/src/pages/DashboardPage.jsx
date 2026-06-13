@@ -164,9 +164,9 @@ export default function DashboardPage() {
                 onClick={() => { setStatus(s); setPage(1) }}
                 className="px-3 py-2 text-xs font-medium rounded-xl transition-all capitalize"
                 style={{
-                  background: status === s ? 'rgba(139,92,246,0.2)' : 'var(--bg-card)',
-                  color: status === s ? '#a78bfa' : 'var(--text-muted)',
-                  border: status === s ? '1px solid rgba(139,92,246,0.4)' : '1px solid var(--border-subtle)'
+                  background: status === s ? 'rgba(186,80,84,0.2)' : 'var(--bg-card)',
+                  color: status === s ? '#D69B82' : 'var(--text-muted)',
+                  border: status === s ? '1px solid rgba(186,80,84,0.4)' : '1px solid var(--border-subtle)'
                 }}>
                 {s === 'all' ? 'All' : s.charAt(0).toUpperCase() + s.slice(1)}
               </button>

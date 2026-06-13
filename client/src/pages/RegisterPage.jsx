@@ -66,9 +66,9 @@ export default function RegisterPage() {
           <div className="inline-flex items-center gap-3 mb-4">
             <div className="relative">
               <div className="absolute inset-0 rounded-2xl blur-md"
-                style={{ background: 'rgba(124,58,237,0.5)' }} />
+                style={{ background: 'rgba(68,23,78,0.5)' }} />
               <div className="relative p-3 rounded-2xl"
-                style={{ background: 'linear-gradient(135deg, #7c3aed, #06b6d4)' }}>
+                style={{ background: 'linear-gradient(135deg, #682240, #44174E)' }}>
                 <Link2 className="h-7 w-7 text-white" />
               </div>
             </div>

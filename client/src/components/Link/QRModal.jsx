@@ -42,7 +42,7 @@ export const QRModal = ({ isOpen, onClose, qrCode, shortUrl }) => {
           <div className="relative p-3 rounded-2xl"
             style={{
               background: 'white',
-              boxShadow: '0 0 40px rgba(139,92,246,0.3)'
+              boxShadow: '0 0 40px rgba(68,23,78,0.3)'
             }}>
             <img src={qrCode} alt="QR Code" className="w-56 h-56 rounded-xl" />
           </div>
@@ -53,7 +53,7 @@ export const QRModal = ({ isOpen, onClose, qrCode, shortUrl }) => {
           style={{ background: 'var(--bg-card)', border: '1px solid var(--border-subtle)' }}>
           <span className="text-xs font-medium text-violet-400 flex-1 truncate">{shortUrl}</span>
           <button onClick={handleCopyUrl} className="p-1 rounded-md transition-all"
-            style={{ color: copied ? '#34d399' : 'var(--text-muted)' }}>
+            style={{ color: copied ? '#DEB16E' : 'var(--text-muted)' }}>
             {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
           </button>
         </div>

@@ -1,6 +1,6 @@
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from 'recharts'
 
-const COSMIC_COLORS = ['#8b5cf6', '#06b6d4', '#ec4899', '#f59e0b', '#10b981', '#a78bfa', '#22d3ee']
+const COSMIC_COLORS = ['#BA5054', '#DEB16E', '#D69B82', '#682240', '#44174E', '#D69B82', '#DEB16E']
 
 const CustomTooltip = ({ active, payload }) => {
   if (!active || !payload?.length) return null

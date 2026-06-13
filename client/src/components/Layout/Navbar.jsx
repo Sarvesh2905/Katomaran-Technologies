@@ -30,9 +30,9 @@ export const Navbar = () => {
           <Link to="/" className="flex items-center gap-2.5 group">
             <div className="relative">
               <div className="absolute inset-0 rounded-xl blur-sm group-hover:blur-md transition-all"
-                style={{ background: 'rgba(139,92,246,0.4)' }} />
+                style={{ background: 'rgba(68,23,78,0.4)' }} />
               <div className="relative p-2 rounded-xl"
-                style={{ background: 'linear-gradient(135deg, #7c3aed, #06b6d4)' }}>
+                style={{ background: 'linear-gradient(135deg, #682240, #44174E)' }}>
                 <Link2 className="h-4 w-4 text-white" />
               </div>
             </div>
@@ -57,7 +57,7 @@ export const Navbar = () => {
                 <div className="flex items-center gap-2.5 pl-3" style={{ borderLeft: '1px solid var(--border-subtle)' }}>
                   <div className="flex items-center gap-2">
                     <div className="h-7 w-7 rounded-full flex items-center justify-center text-xs font-bold"
-                      style={{ background: 'linear-gradient(135deg, #7c3aed, #06b6d4)', color: 'white' }}>
+                      style={{ background: 'linear-gradient(135deg, #682240, #44174E)', color: 'white' }}>
                       {user?.name?.[0]?.toUpperCase() || 'U'}
                     </div>
                     <span className="text-sm font-medium" style={{ color: 'var(--text-secondary)' }}>

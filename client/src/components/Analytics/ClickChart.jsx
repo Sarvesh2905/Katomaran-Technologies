@@ -29,9 +29,9 @@ export const ClickChart = ({ data, onRangeChange }) => {
             onClick={() => handleRange(d)}
             className="px-3 py-1 rounded-lg text-xs font-medium transition-all"
             style={{
-              background: range === d ? 'rgba(139,92,246,0.2)' : 'transparent',
-              color: range === d ? '#a78bfa' : 'var(--text-muted)',
-              border: range === d ? '1px solid rgba(139,92,246,0.4)' : '1px solid var(--border-subtle)'
+              background: range === d ? 'rgba(186,80,84,0.2)' : 'transparent',
+              color: range === d ? '#D69B82' : 'var(--text-muted)',
+              border: range === d ? '1px solid rgba(186,80,84,0.4)' : '1px solid var(--border-subtle)'
             }}
           >
             {d}d
@@ -43,8 +43,8 @@ export const ClickChart = ({ data, onRangeChange }) => {
           <AreaChart data={data} margin={{ top: 5, right: 5, bottom: 0, left: 0 }}>
             <defs>
               <linearGradient id="clickGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.4} />
-                <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0} />
+                <stop offset="5%" stopColor="#BA5054" stopOpacity={0.4} />
+                <stop offset="95%" stopColor="#BA5054" stopOpacity={0} />
               </linearGradient>
             </defs>
             <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
@@ -64,20 +64,20 @@ export const ClickChart = ({ data, onRangeChange }) => {
               tick={{ fill: '#64748b' }}
               width={30}
             />
-            <Tooltip content={<CustomTooltip />} cursor={{ stroke: 'rgba(139,92,246,0.3)', strokeWidth: 1 }} />
+            <Tooltip content={<CustomTooltip />} cursor={{ stroke: 'rgba(68,23,78,0.3)', strokeWidth: 1 }} />
             <Area
               type="monotone"
               dataKey="clicks"
-              stroke="#8b5cf6"
+              stroke="#BA5054"
               strokeWidth={2.5}
               fill="url(#clickGradient)"
               dot={false}
               activeDot={{
                 r: 6,
-                fill: '#8b5cf6',
-                stroke: 'rgba(139,92,246,0.4)',
+                fill: '#BA5054',
+                stroke: 'rgba(186,80,84,0.4)',
                 strokeWidth: 4,
-                style: { filter: 'drop-shadow(0 0 8px rgba(139,92,246,0.6))' }
+                style: { filter: 'drop-shadow(0 0 8px rgba(186,80,84,0.6))' }
               }}
               animationDuration={1200}
               animationEasing="ease-in-out"

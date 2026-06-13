@@ -187,9 +187,9 @@ export default function LinkDetailsPage() {
             <button key={tab.id} onClick={() => setActiveTab(tab.id)}
               className="px-4 py-2 rounded-lg text-sm font-medium transition-all"
               style={{
-                background: activeTab === tab.id ? 'linear-gradient(135deg, rgba(124,58,237,0.4), rgba(6,182,212,0.2))' : 'transparent',
-                color: activeTab === tab.id ? '#a78bfa' : 'var(--text-muted)',
-                border: activeTab === tab.id ? '1px solid rgba(139,92,246,0.3)' : '1px solid transparent'
+                background: activeTab === tab.id ? 'linear-gradient(135deg, rgba(68,23,78,0.4), rgba(186,80,84,0.2))' : 'transparent',
+                color: activeTab === tab.id ? '#D69B82' : 'var(--text-muted)',
+                border: activeTab === tab.id ? '1px solid rgba(186,80,84,0.3)' : '1px solid transparent'
               }}>
               {tab.label}
             </button>

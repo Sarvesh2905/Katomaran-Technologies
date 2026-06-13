@@ -6,7 +6,7 @@ export const LoadingSpinner = ({ size = 'md', text }) => {
       <div className="relative">
         <div className={`${sizes[size]} rounded-full`}
           style={{
-            background: 'conic-gradient(from 0deg, transparent 0%, rgba(139,92,246,1) 100%)',
+            background: 'conic-gradient(from 0deg, transparent 0%, rgba(68,23,78,1) 100%)',
             animation: 'spin 1s linear infinite'
           }}
         />

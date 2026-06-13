@@ -1,14 +1,14 @@
-import { TrendingUp, TrendingDown, Smartphone, Globe, MapPin, Flame, Lightbulb } from 'lucide-react'
+import { TrendingUp, TrendingDown, Smartphone, Globe, MapPin, Flame, Lightbulb, Clock } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const iconMap = {
-  'trending-up':   { Icon: TrendingUp,   color: '#34d399', bg: 'rgba(16,185,129,0.1)',  border: 'rgba(16,185,129,0.25)' },
-  'trending-down': { Icon: TrendingDown, color: '#f87171', bg: 'rgba(239,68,68,0.1)',   border: 'rgba(239,68,68,0.25)' },
-  'smartphone':    { Icon: Smartphone,   color: '#22d3ee', bg: 'rgba(6,182,212,0.1)',   border: 'rgba(6,182,212,0.25)' },
-  'globe':         { Icon: Globe,        color: '#a78bfa', bg: 'rgba(139,92,246,0.1)',  border: 'rgba(139,92,246,0.25)' },
-  'map-pin':       { Icon: MapPin,       color: '#f472b6', bg: 'rgba(236,72,153,0.1)',  border: 'rgba(236,72,153,0.25)' },
-  'flame':         { Icon: Flame,        color: '#fbbf24', bg: 'rgba(245,158,11,0.1)',  border: 'rgba(245,158,11,0.25)' },
-  'lightbulb':     { Icon: Lightbulb,    color: '#67e8f9', bg: 'rgba(6,182,212,0.08)', border: 'rgba(6,182,212,0.2)' }
+  'trending-up':   { Icon: TrendingUp,   color: '#DEB16E', bg: 'rgba(222,177,110,0.1)',  border: 'rgba(222,177,110,0.25)' },
+  'trending-down': { Icon: TrendingDown, color: '#BA5054', bg: 'rgba(186,80,84,0.1)',    border: 'rgba(186,80,84,0.25)' },
+  'smartphone':    { Icon: Smartphone,   color: '#D69B82', bg: 'rgba(214,155,130,0.1)',  border: 'rgba(214,155,130,0.25)' },
+  'globe':         { Icon: Globe,        color: '#D69B82', bg: 'rgba(214,155,130,0.1)',  border: 'rgba(214,155,130,0.25)' },
+  'map-pin':       { Icon: MapPin,       color: '#BA5054', bg: 'rgba(186,80,84,0.1)',    border: 'rgba(186,80,84,0.25)' },
+  'clock':         { Icon: Clock,        color: '#DEB16E', bg: 'rgba(222,177,110,0.1)',  border: 'rgba(222,177,110,0.25)' },
+  'lightbulb':     { Icon: Lightbulb,    color: '#DEB16E', bg: 'rgba(222,177,110,0.08)', border: 'rgba(222,177,110,0.2)' }
 }
 
 export const InsightCards = ({ insights = [] }) => {

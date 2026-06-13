@@ -17,16 +17,16 @@ function App() {
         </div>
         <div className="relative">
           <div className="absolute inset-0 rounded-2xl blur-xl"
-            style={{ background: 'rgba(124,58,237,0.4)' }} />
+            style={{ background: 'rgba(68,23,78,0.4)' }} />
           <div className="relative p-4 rounded-2xl"
-            style={{ background: 'linear-gradient(135deg, #7c3aed, #06b6d4)' }}>
+            style={{ background: 'linear-gradient(135deg, #682240, #44174E)' }}>
             <Link2 className="h-8 w-8 text-white" />
           </div>
         </div>
         <div className="flex gap-1.5">
           {[0, 0.15, 0.3].map(d => (
             <div key={d} className="h-2 w-2 rounded-full animate-bounce"
-              style={{ background: '#8b5cf6', animationDelay: `${d}s` }} />
+              style={{ background: '#BA5054', animationDelay: `${d}s` }} />
           ))}
         </div>
       </div>

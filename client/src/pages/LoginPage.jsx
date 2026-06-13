@@ -68,9 +68,9 @@ export default function LoginPage() {
           >
             <div className="relative">
               <div className="absolute inset-0 rounded-2xl blur-md"
-                style={{ background: 'rgba(124,58,237,0.5)' }} />
+                style={{ background: 'rgba(68,23,78,0.5)' }} />
               <div className="relative p-3 rounded-2xl"
-                style={{ background: 'linear-gradient(135deg, #7c3aed, #06b6d4)' }}>
+                style={{ background: 'linear-gradient(135deg, #682240, #44174E)' }}>
                 <Link2 className="h-7 w-7 text-white" />
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function LoginPage() {
           {/* Gradient top border */}
           <div className="absolute top-0 left-0 right-0 h-0.5 rounded-t-2xl aurora-gradient"
             style={{ position: 'relative', height: '2px', marginBottom: '24px',
-              background: 'linear-gradient(90deg, #7c3aed, #06b6d4, #ec4899)', borderRadius: '2px' }} />
+              background: 'linear-gradient(90deg, #682240, #BA5054, #D69B82)', borderRadius: '2px' }} />
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
             <Input

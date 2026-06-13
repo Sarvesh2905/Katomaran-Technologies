@@ -70,14 +70,14 @@ export const BulkUploadModal = ({ isOpen, onClose }) => {
         {/* Template download */}
         <button onClick={downloadTemplate}
           className="w-full flex items-center gap-2.5 px-4 py-3 rounded-xl text-sm transition-all"
-          style={{ background: 'rgba(6,182,212,0.08)', border: '1px solid rgba(6,182,212,0.2)', color: '#22d3ee' }}>
+          style={{ background: 'rgba(222,177,110,0.08)', border: '1px solid rgba(222,177,110,0.2)', color: '#DEB16E' }}>
           <DownloadCloud className="h-4 w-4 flex-shrink-0" />
           <span>Download CSV Template</span>
         </button>
 
         {/* CSV format hint */}
         <div className="rounded-xl px-4 py-3 text-xs space-y-1"
-          style={{ background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.15)', color: 'var(--text-secondary)' }}>
+          style={{ background: 'rgba(68,23,78,0.08)', border: '1px solid rgba(68,23,78,0.15)', color: 'var(--text-secondary)' }}>
           <p className="font-medium text-violet-400">Required columns:</p>
           <p><span className="text-violet-300">originalUrl</span> (required) · <span className="text-slate-400">customAlias, title, expiryDate</span> (optional)</p>
         </div>
@@ -90,8 +90,8 @@ export const BulkUploadModal = ({ isOpen, onClose }) => {
           onClick={() => fileRef.current?.click()}
           className="relative flex flex-col items-center justify-center p-8 rounded-xl cursor-pointer transition-all"
           style={{
-            border: `2px dashed ${isDragOver ? 'rgba(139,92,246,0.7)' : file ? 'rgba(16,185,129,0.5)' : 'var(--border-default)'}`,
-            background: isDragOver ? 'rgba(139,92,246,0.05)' : 'transparent'
+            border: `2px dashed ${isDragOver ? 'rgba(68,23,78,0.7)' : file ? 'rgba(214,155,130,0.5)' : 'var(--border-default)'}`,
+            background: isDragOver ? 'rgba(68,23,78,0.05)' : 'transparent'
           }}
         >
           <input ref={fileRef} type="file" accept=".csv" className="hidden"
@@ -124,7 +124,7 @@ export const BulkUploadModal = ({ isOpen, onClose }) => {
             </div>
             {result.errors?.length > 0 && (
               <div className="rounded-xl p-3"
-                style={{ background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.2)' }}>
+                style={{ background: 'rgba(186,80,84,0.08)', border: '1px solid rgba(186,80,84,0.2)' }}>
                 <div className="flex items-center gap-2 mb-2 text-rose-400">
                   <AlertTriangle className="h-4 w-4" />
                   <span className="text-xs font-medium">{result.errors.length} errors</span>

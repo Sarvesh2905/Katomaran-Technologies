@@ -44,8 +44,8 @@ export const GeoTable = ({ data = [] }) => {
                 className="h-full rounded-full transition-all duration-700"
                 style={{
                   width: `${barPct}%`,
-                  background: `linear-gradient(90deg, #8b5cf6, #06b6d4)`,
-                  boxShadow: '0 0 8px rgba(139,92,246,0.5)'
+                  background: `linear-gradient(90deg, #BA5054, #DEB16E)`,
+                  boxShadow: '0 0 8px rgba(186,80,84,0.5)'
                 }}
               />
             </div>

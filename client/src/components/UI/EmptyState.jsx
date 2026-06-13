@@ -10,7 +10,7 @@ export const EmptyState = ({ title, description, action, icon: Icon }) => {
       <div className="relative mb-6">
         {/* Glow orb behind icon */}
         <div className="absolute inset-0 rounded-full blur-2xl opacity-30"
-          style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.6) 0%, transparent 70%)' }} />
+          style={{ background: 'radial-gradient(circle, rgba(68,23,78,0.6) 0%, transparent 70%)' }} />
         <div className="relative glass-card rounded-2xl p-5 w-20 h-20 flex items-center justify-center"
           style={{ border: '1px solid var(--border-default)' }}>
           {Icon ? (

@@ -7,24 +7,24 @@ import { Toaster } from '../components/UI/Toaster.jsx'
 const statusConfig = {
   expired: {
     icon: Clock,
-    iconColor: '#fbbf24',
-    iconBg: 'rgba(245,158,11,0.15)',
+    iconColor: '#DEB16E',
+    iconBg: 'rgba(222,177,110,0.15)',
     title: 'Link Expired',
     message: 'This short link has expired and is no longer active.',
     sub: 'Contact the link creator to request a new link.'
   },
   disabled: {
     icon: Power,
-    iconColor: '#f87171',
-    iconBg: 'rgba(239,68,68,0.12)',
+    iconColor: '#BA5054',
+    iconBg: 'rgba(186,80,84,0.12)',
     title: 'Link Disabled',
     message: 'This short link has been temporarily disabled.',
     sub: 'The link owner may re-enable it at any time.'
   },
   notfound: {
     icon: AlertTriangle,
-    iconColor: '#a78bfa',
-    iconBg: 'rgba(139,92,246,0.15)',
+    iconColor: '#D69B82',
+    iconBg: 'rgba(214,155,130,0.15)',
     title: 'Link Not Found',
     message: 'This short link doesn\'t exist or may have been deleted.',
     sub: 'Double-check the URL and try again.'

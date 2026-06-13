@@ -40,11 +40,11 @@ export const StatsCard = ({
   const animated = useCountUp(numericValue, 1400)
 
   const iconColors = {
-    violet: { bg: 'rgba(139,92,246,0.15)', color: '#a78bfa', glow: 'rgba(139,92,246,0.3)' },
-    cyan:   { bg: 'rgba(6,182,212,0.15)',  color: '#22d3ee', glow: 'rgba(6,182,212,0.3)' },
-    pink:   { bg: 'rgba(236,72,153,0.15)', color: '#f472b6', glow: 'rgba(236,72,153,0.3)' },
-    emerald:{ bg: 'rgba(16,185,129,0.15)', color: '#34d399', glow: 'rgba(16,185,129,0.3)' },
-    amber:  { bg: 'rgba(245,158,11,0.15)', color: '#fbbf24', glow: 'rgba(245,158,11,0.3)' }
+    violet: { bg: 'rgba(68,23,78,0.2)',   color: '#D69B82', glow: 'rgba(68,23,78,0.3)' },
+    cyan:   { bg: 'rgba(222,177,110,0.15)', color: '#DEB16E', glow: 'rgba(222,177,110,0.3)' },
+    pink:   { bg: 'rgba(186,80,84,0.15)',  color: '#BA5054', glow: 'rgba(186,80,84,0.3)' },
+    emerald:{ bg: 'rgba(214,155,130,0.15)', color: '#D69B82', glow: 'rgba(214,155,130,0.3)' },
+    amber:  { bg: 'rgba(222,177,110,0.15)', color: '#DEB16E', glow: 'rgba(222,177,110,0.3)' }
   }
 
   const ic = iconColors[iconColor] || iconColors.violet

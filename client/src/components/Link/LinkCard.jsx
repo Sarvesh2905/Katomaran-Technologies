@@ -82,7 +82,7 @@ export const LinkCard = ({ link, onDelete, onEdit, onToggleStatus }) => {
         {/* Gradient accent top line - only for active links */}
         {link.status === 'active' && (
           <div className="absolute top-0 left-0 right-0 h-px"
-            style={{ background: 'linear-gradient(90deg, transparent, rgba(139,92,246,0.6), transparent)' }} />
+            style={{ background: 'linear-gradient(90deg, transparent, rgba(68,23,78,0.6), transparent)' }} />
         )}
 
         <div className="flex items-start justify-between">
@@ -109,8 +109,8 @@ export const LinkCard = ({ link, onDelete, onEdit, onToggleStatus }) => {
                 onClick={handleCopy}
                 className="flex-shrink-0 p-1 rounded-md transition-all"
                 style={{
-                  color: copied ? '#34d399' : 'var(--text-muted)',
-                  background: copied ? 'rgba(16,185,129,0.1)' : 'transparent'
+                  color: copied ? '#DEB16E' : 'var(--text-muted)',
+                  background: copied ? 'rgba(222,177,110,0.1)' : 'transparent'
                 }}
               >
                 {copied ? <Check className="h-3.5 w-3.5" /> : <Copy className="h-3.5 w-3.5" />}
@@ -145,7 +145,7 @@ export const LinkCard = ({ link, onDelete, onEdit, onToggleStatus }) => {
             <button
               onClick={() => navigate(`/links/${link._id}`)}
               className="p-2 rounded-xl transition-all opacity-0 group-hover:opacity-100"
-              style={{ color: 'var(--text-muted)', background: 'rgba(139,92,246,0.08)' }}
+              style={{ color: 'var(--text-muted)', background: 'rgba(68,23,78,0.08)' }}
               title="Analytics"
             >
               <BarChart3 className="h-4 w-4" />
@@ -153,7 +153,7 @@ export const LinkCard = ({ link, onDelete, onEdit, onToggleStatus }) => {
             <button
               onClick={() => setShowQR(true)}
               className="p-2 rounded-xl transition-all opacity-0 group-hover:opacity-100"
-              style={{ color: 'var(--text-muted)', background: 'rgba(6,182,212,0.08)' }}
+              style={{ color: 'var(--text-muted)', background: 'rgba(222,177,110,0.08)' }}
               title="QR Code"
             >
               <QrCode className="h-4 w-4" />
@@ -166,7 +166,7 @@ export const LinkCard = ({ link, onDelete, onEdit, onToggleStatus }) => {
                 className="p-2 rounded-xl transition-all"
                 style={{
                   color: 'var(--text-muted)',
-                  background: showMenu ? 'rgba(139,92,246,0.1)' : 'transparent'
+                  background: showMenu ? 'rgba(68,23,78,0.1)' : 'transparent'
                 }}
               >
                 <MoreVertical className="h-4 w-4" />

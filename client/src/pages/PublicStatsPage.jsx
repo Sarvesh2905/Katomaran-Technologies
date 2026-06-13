@@ -58,7 +58,7 @@ export default function PublicStatsPage() {
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}>
           <div className="flex items-center gap-2.5 mb-8 justify-center">
-            <div className="p-2.5 rounded-xl" style={{ background: 'linear-gradient(135deg, #7c3aed, #06b6d4)' }}>
+            <div className="p-2.5 rounded-xl" style={{ background: 'linear-gradient(135deg, #682240, #44174E)' }}>
               <Link2 className="h-5 w-5 text-white" />
             </div>
             <span className="text-xl font-bold gradient-text">KatoPulse Stats</span>
@@ -103,7 +103,7 @@ export default function PublicStatsPage() {
               <QrCode className="h-4 w-4 text-violet-400" />
               <h2 className="text-sm font-semibold" style={{ color: 'var(--text-primary)' }}>QR Code</h2>
             </div>
-            <div className="p-3 rounded-xl bg-white" style={{ boxShadow: '0 0 40px rgba(139,92,246,0.3)' }}>
+            <div className="p-3 rounded-xl bg-white" style={{ boxShadow: '0 0 40px rgba(68,23,78,0.3)' }}>
               <img src={data.qrCode} alt="QR Code" className="w-40 h-40 rounded-lg" />
             </div>
             <p className="text-xs" style={{ color: 'var(--text-muted)' }}>Scan to visit the link</p>
